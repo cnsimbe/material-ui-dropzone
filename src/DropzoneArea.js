@@ -66,9 +66,10 @@ class DropzoneArea extends Component{
     }
     
     componentDidMount() {
-        const { initialUploadFiles } = this.props;
+        const { initialUploadFiles, dropzoneText } = this.props;
         if(initialUploadFiles)
             this.onDrop(initialUploadFiles)
+        this.setState({dropzoneText})
     }
    
     componentWillUnmount(){

@@ -1677,9 +1677,12 @@ var DropzoneArea = function (_Component) {
     createClass(DropzoneArea, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
-            var initialUploadFiles = this.props.initialUploadFiles;
+            var _props = this.props,
+                initialUploadFiles = _props.initialUploadFiles,
+                dropzoneText = _props.dropzoneText;
 
             if (initialUploadFiles) this.onDrop(initialUploadFiles);
+            this.setState({ dropzoneText: dropzoneText });
         }
     }, {
         key: 'componentWillUnmount',
