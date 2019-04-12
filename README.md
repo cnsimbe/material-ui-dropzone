@@ -72,6 +72,7 @@ export default DropzoneAreaExample;
 | dropZoneClass    | String | null             | Custom CSS class name for dropzone container. 
 | dropzoneParagraphClass    | String | null             | Custom CSS class name for text inside the container. 
 | showFileNamesInPreview | Boolean | false | Shows file name under the image    
+| initialUploadFiles | Array | null | Array of Files to initially display for upload when component is mounted    
 
 
 ### DropzoneArea Component Events

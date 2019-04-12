@@ -240,7 +240,7 @@ DropzoneArea.defaultProps = {
     showPreviews: false, // By default previews show up under in the dialog and inside in the standalone
     showPreviewsInDropzone: true,
     showFileNamesInPreview: false,
-    initialUploadFiles:undefined,
+    initialUploadFiles:null,
     showAlerts: true,
     clearOnUnmount: true,
     onChange: () => {},
